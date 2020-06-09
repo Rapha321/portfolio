@@ -1,0 +1,199 @@
+body  {
+  background-color: ghostwhite;
+}
+
+main {
+  padding-bottom: 20px;
+}
+
+.header nav {
+  background-color: mintcream;
+  box-shadow: 0.1px 0.1px 0.4px #888;
+
+}
+
+.first {
+  color: black;
+}
+
+.last {
+  color: darkslategray;
+}
+
+.header div {
+  justify-content: flex-end;
+}
+
+.header span {
+  font-size: 30px;
+}
+
+.image img {
+  width: 160px;
+  height: 160px;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  padding-top: 15px;
+  padding-right: 15px;
+}
+
+#footer {
+  position:fixed;
+  height: 20px;
+  width:100%;
+  text-align: center;
+  background-color: snow;
+  padding-bottom: 25px;
+  padding-top: 5px;
+  bottom: 0;
+}
+
+#footer i {
+  color: red;
+}
+
+#about-me {
+  position: relative;
+  margin-top: 90px;
+  margin-right: 40px;
+  margin-left: 40px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  font-family: 'arial', sans-serif;
+  font-size: 17px;
+  background: white;
+  box-shadow: 1px 1px 1px #888;
+  /*opacity: 0.9;*/
+}
+
+#about-me h2 {
+  padding-bottom: 10px;
+}
+
+#about-me .items {
+  margin-bottom: 0;
+}
+
+#portfolio {
+  margin: 40px 40px;
+  font-family: 'arial', sans-serif;
+  font-size: 17px;
+  background: white;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  box-shadow: 1px 1px 1px #888;
+
+  /*opacity: 0.9;*/
+}
+
+#portfolio h2 {
+  padding-bottom: 10px;
+}
+
+table .project {
+  width: 15%;
+  text-align: left;
+  vertical-align: top;
+  padding-right: 20px;
+}
+
+table .desc {
+  width: 60%
+  padding-left: 10px;
+  padding-right: 20px;
+  padding-bottom: 15px;
+}
+
+table .git {
+  width: 15%;
+  text-align: center;
+  vertical-align: top;
+
+}
+
+#skills {
+  margin: 40px 40px;
+  font-family: 'arial', sans-serif;
+  font-size: 17px;
+  background: white;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  box-shadow: 1px 1px 1px #888;
+
+  /*opacity: 0.9;*/
+}
+
+#skills h2 {
+  padding-bottom: 10px;
+}
+
+.arrow-up {
+  color: red;
+  opacity: 0.5;
+  display: none;
+  position: fixed;
+  bottom: 60px;
+  right: 30px;
+  padding: 15px;
+}
+
+.arrow-up:hover {
+  opacity: 1;
+}
+
+#skills table {
+  border: none;
+}
+
+
+#skills td {
+  height: 80px;
+  width: 80px;
+  border: none;
+}
+
+#contact {
+  margin: 40px 40px;
+  font-family: 'arial', sans-serif;
+  font-size: 17px;
+  background: white;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  box-shadow: 1px 1px 1px #888;
+
+  /*opacity: 0.9;*/
+}
+
+#contact h2 {
+  padding-bottom: 10px;
+}
+
+.fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+
+
