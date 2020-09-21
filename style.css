@@ -14,7 +14,6 @@ main {
 .header nav {
   background-color: mintcream;
   box-shadow: 0.1px 0.1px 1px #888;
-
 }
 
 .first {
@@ -97,9 +96,23 @@ table .desc {
 }
 
 table .git {
-  width: 15%;
+  width: 12%;
   text-align: center;
   vertical-align: top;
+}
+
+table .git button:hover {
+  box-shadow: 1px 2px 2px #888;
+}
+
+table .open {
+  width: 12%;
+  text-align: center;
+  vertical-align: top;
+}
+
+table .open button:hover {
+  box-shadow: 1px 2px 2px #888;
 }
 
 
