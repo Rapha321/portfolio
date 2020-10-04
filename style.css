@@ -7,8 +7,6 @@ body  {
 
 main {
   padding-bottom: 20px;
-  margin-right: 5%;
-  margin-left: 5%;
 }
 
 .header nav {
@@ -17,11 +15,11 @@ main {
 }
 
 .first {
-  color: black;
+  color: blueviolet;
 }
 
 .last {
-  color: darkslategray;
+  color: yellowgreen;
 }
 
 .header div {
@@ -48,15 +46,20 @@ main {
 }
 
 #about-me {
-  position: relative;
-  margin-top: 10%;
-  padding-top: 30px;
-  padding-bottom: 20px;
+  padding-top: 120px;
+  padding-bottom: 50px;
+  padding-right: 100px;
+  padding-left: 100px;
   font-family: 'arial', sans-serif;
   background: white;
-  box-shadow: 1px 1px 1px #888;
   opacity: 0.95;
-  border-radius: 10px;
+  display: flex;
+}
+
+.about-me-img {
+  float: right;
+  margin-left: 20px;
+
 }
 
 #about-me h2 {
@@ -69,12 +72,9 @@ main {
 
 #portfolio {
   font-family: 'arial', sans-serif;
-  background: white;
-  padding-top: 30px;
-  padding-bottom: 20px;
-  box-shadow: 1px 1px 1px #888;
+  background: aliceblue;
+  padding: 50px 100px;
   opacity: 0.95;
-  border-radius: 10px;
 }
 
 #portfolio h2 {
@@ -118,12 +118,14 @@ table .open button:hover {
 
 #skills {
   font-family: 'arial', sans-serif;
+  padding: 50px 100px;
   background: white;
-  padding-top: 30px;
-  padding-bottom: 20px;
-  box-shadow: 1px 1px 1px #888;
   opacity: 0.9;
-  border-radius: 10px;
+  display: flex;
+}
+
+.skills-img {
+  margin-right: 30px;
 }
 
 #skills h2 {
@@ -162,12 +164,9 @@ table .open button:hover {
 
 #contact {
   font-family: 'arial', sans-serif;
-  background: white;
-  padding-top: 30px;
-  padding-bottom: 20px;
-  box-shadow: 1px 1px 1px #888;
+  background: lavender;
+  padding: 50px 100px;
   opacity: 0.9;
-  border-radius: 10px;
 }
 
 #contact h2 {
@@ -182,7 +181,6 @@ table .open button:hover {
   text-align: center;
   text-decoration: none;
   margin: 5px 2px;
-  border-radius: 50%;
 }
 
 .fa:hover {
@@ -208,16 +206,15 @@ table .open button:hover {
   }
 
   #about-me {
-    height: 350px;
+    /*height: 350px;*/
     overflow: scroll;
-    margin-top: 30%;
-    padding-top: 5px:
-    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   #skills {
-    height: 350px;
     overflow: scroll;
+    padding: 20px 20px;
   }
 
   #skills table tr {
@@ -228,7 +225,18 @@ table .open button:hover {
   #portfolio {
     height: 500px;
     overflow: scroll;
+    padding: 20px 20px;
+
   }
+
+  .about-me-img, .skills-img {
+    display: none;
+  }
+
+  #contact {
+    padding: 20px 20px;
+  }
+
 }
 
 
