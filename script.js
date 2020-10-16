@@ -17,5 +17,19 @@ $(document).ready(function() {  // to make sure that the DOM of the page is read
     $('html ,body').animate({scrollTop : 0},800);
   });
 
+  // when shout button is clicked on contact section, hide form and display a message
+  // $("#submit").click(function() {
+    // $("#contact-form").hide();
+    // alert("Got your message. Thanks ya!")
+
+  //   'api:YOUR_API_KEY' \
+  //   https://api.mailgun.net/v3/YOUR_DOMAIN_NAME/messages \
+  //   -F from='Excited User <mailgun@YOUR_DOMAIN_NAME>' \
+  //   -F to=YOU@YOUR_DOMAIN_NAME \
+  //   -F to=bar@example.com \
+  //   -F subject='Hello' \
+  //   -F text='Testing some Mailgun awesomeness!'
+  // })
+
 
 })

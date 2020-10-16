@@ -16,7 +16,6 @@
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/1183c3861a.js" crossorigin="anonymous"></script>
 
-
   <!-- App CSS -->
   <link rel="stylesheet" href="style.css" type="text/css" />
 
@@ -49,8 +48,8 @@
           <span>
             <a href="https://resume.creddle.io/resume/83fzb06543x" target="blank">
               <strong>
-                <span class="first">Raphael</span>
-                <span class="last">Albern</span>
+                <span class="first">raphael</span>
+                <span class="last">albern</span>
               </strong>
             </a>
 
@@ -87,26 +86,26 @@
     <!-- ABOUT ME -->
     <section id="about-me">
       <div>
-        <h2>about me</h2>
+        <h1>about me</h1>
         <p>
           After working in the accounting/finance for several years, I changed my career path to go in the tech industry and jump into a career that excites me, challenges me, and allows me to use my creativity. I joined Lighthouse Lab's Web Development Bootcamp to build on my knowledge of full stack technologies. Now I am eager to bring my problem-solving and client support skills along with my teamwork and technical skills from the Bootcamp into a developer role.
         </p>
 
 
         <p>
-          I am looking for a junior/intern position to kick start my career in tech. I want to learn and grow with a company through cotinuous professional development.
+          I am looking for a junior position to kick start my career in tech. I am looking forward to have fun learning and grow with a company through cotinuous professional development :)
           <br><br>
 
         </p>
       </div>
       <div class="about-me-img">
-        <img src="about-me.png" width="250px" height="250px">
+        <img src="./img/about-me.png" width="250px" height="250px">
       </div>
     </section>
 
     <!-- PORTFOLIO -->
     <section id="portfolio" >
-      <h2>portfolio</h2>
+      <h1>portfolio</h1>
 
       <table>
         <!-- TABLE HEADER -->
@@ -116,43 +115,54 @@
           <!-- <th class="open">Webpage</th> -->
           <th class="git">Github repo</th>
         </tr>
+
         <!-- GITHUB AVATAR DOWNLOADER -->
-        <tr>
+        <tr class="project-select">
           <td class="project">Github Avatar Downloader</td>
           <td class="desc">A command line node app that uses HTTP to retrieve content from Github using their API and write content on disk.</td>
           <!-- <td class="open"><a href="#"><button class="btn btn-success">Open</button></a></td> -->
-          <td class="git"><a href="https://github.com/Rapha321/github-avatar-downloader" target="blank"><button class="btn btn-info"><img src="https://img.icons8.com/fluent/25/000000/github.png"/></button></a></td>
+          <td class="git"><a href="https://github.com/Rapha321/github-avatar-downloader" target="blank"><button class="btn-github"><img src="https://img.icons8.com/fluent/25/000000/github.png"/></button></a></td>
         </tr>
+
         <!-- TINY APP -->
-        <tr>
+        <tr class="project-select">
           <td class="project">Tiny App</td>
           <td class="desc">
             TinyApp is a full stack web application built with Node and Express that allow users to shorten long URLs (a la bit.ly).
             Dependencies: Node.js, Express, EJS, bcrypt, body-parser, cookie-session.
           </td>
           <!-- <td class="open"><a href="#"><button class="btn btn-success">Open</button></a></td> -->
-          <td class="git"><a href="https://github.com/Rapha321/TinyApp-Project/blob/master/README.md" target="blank"><button class="btn btn-info"><img src="https://img.icons8.com/fluent/25/000000/github.png"/></button></a></td>
+          <td class="git"><a href="https://github.com/Rapha321/TinyApp-Project/blob/master/README.md" target="blank"><button class="btn-github"><img src="https://img.icons8.com/fluent/25/000000/github.png"/></button></a></td>
         </tr>
+
         <!-- TWEETER -->
-        <tr>
+        <tr class="project-select">
           <td class="project">Tweeter</td>
           <td class="desc">
             Tweeter is a simple, single-page Twitter clone built with HTML, CSS, JS, jQuery and AJAX on front-end, and Node, Express and MongoDB on back-end.
           </td>
           <!-- <td class="open"><a href="https://lhl-tweeter.herokuapp.com" target="blank"><button class="btn btn-success">Open</button></a></td> -->
-          <td class="git"><a href="https://github.com/Rapha321/tweeter1/blob/master/README.md" target="blank"><button class="btn btn-info"><img src="https://img.icons8.com/fluent/25/000000/github.png"/></button></a></td>
+          <td class="git"><a href="https://github.com/Rapha321/tweeter1/blob/master/README.md" target="blank"><button class="btn-github"><img src="https://img.icons8.com/fluent/25/000000/github.png"/></button></a></td>
         </tr>
+
         <!-- SCHOODLE - MIDTERM PROJECT-->
-        <tr>
+        <tr class="project-select">
           <td class="project">Schoodle (Mid Term project)</td>
           <td class="desc">
             Schoole is a simple, easy to use, free event organizing app. The repository is the start code for the project: users will fork and clone this repository, then build upon it using HTML, CSS, SASS,Bootstrap, JS, JQuery, AJAX front-end skills, and back-end skills including Node, express, postgres and knex.
           </td>
           <!-- <td class="open"><a href="#"><button class="btn btn-success">Open</button></a></td> -->
-          <td class="git"><a href="https://github.com/Rapha321/lhl_midTermProject" target="blank"><button class="btn btn-info"><img src="https://img.icons8.com/fluent/25/000000/github.png"/></button></a></td>
+          <td class="git">
+            <a href="https://github.com/Rapha321/lhl_midTermProject" target="blank">
+              <button class="btn-github">
+                <img src="https://img.icons8.com/fluent/25/000000/github.png"/>
+              </button>
+          </a>
+          </td>
         </tr>
+
         <!-- ROOMY - FINAL PROJECT -->
-        <tr>
+        <tr class="project-select">
           <td class="project">Roomy (Final project)</td>
           <td class="desc">
             Roomy is a web application created to connect people who are looking for a room to live and for a room to rent out. The core piece of the application is people. Roomy is built in the way that people could see their matching score with potential roommates and make a decision based on that score. The matching score is based on habits, cleanliness, working/partying schedules, food preferences and personality.
@@ -162,7 +172,7 @@
           <!-- </td> -->
           <td class="git">
             <a href="https://github.com/Rapha321/roomy/blob/master/README.md" target="blank">
-              <button class="btn btn-info"><img src="https://img.icons8.com/fluent/25/000000/github.png"/></button>
+              <button class="btn-github"><img src="https://img.icons8.com/fluent/25/000000/github.png"/></button>
             </a>
           </td>
         </tr>
@@ -175,22 +185,24 @@
     <section id="skills" >
 
       <div class="skills-img">
-        <img src="skills-img.png" width="250px" height="250px">
+        <img src="./img/skills-img.png" width="250px" height="250px">
       </div>
 
       <div>
-        <h2>skills</h2>
+        <h1>skills</h1>
 
         <table class="languages">
           <tr>
             <td><h5>Languages</h5></td>
             <td> : </td>
             <div>
-              <td><img src="https://img.icons8.com/windows/64/000000/html-5.png"/></td>
+              <td><img src="./img/python.png" width="45em"></td>
+              <td><img src="./img/html.png" width="45em"></td>
+              <!-- <td><img src="https://img.icons8.com/windows/64/000000/html-5.png"/></td> -->
               <td><img src="https://img.icons8.com/windows/64/000000/css.png"/></td>
               <td><img src="https://img.icons8.com/windows/64/000000/js.png"/></td>
               <td><img src="https://img.icons8.com/windows/64/000000/sql.png"/></td>
-              <td><img src="https://img.icons8.com/windows/64/000000/python.png"/></td>
+              <!-- <td><img src="https://img.icons8.com/windows/64/000000/python.png"/></td> -->
             </div>
 
           </tr>
@@ -201,9 +213,10 @@
             <td><h5>Framework</h5></td>
             <td>  : </td>
             <div>
-              <td><img src="https://img.icons8.com/wired/64/000000/react.png"/></td>
-              <td><img src="https://img.icons8.com/color/64/000000/bootstrap.png"/></td>
-              <td><img src="https://img.icons8.com/ios-filled/50/000000/jquery.png"/></td>
+              <td><img src="./img/react.png" width="45em">react</td>
+              <!-- <td><img src="https://img.icons8.com/wired/64/000000/react.png"/></td> -->
+              <td><img src="https://img.icons8.com/color/64/000000/bootstrap.png"/>Bootstrat</td>
+              <td><img src="https://img.icons8.com/ios-filled/50/000000/jquery.png"/>jQuery</td>
               <td><img src="https://img.icons8.com/windows/64/000000/nodejs.png"/></td>
             </div>
           </tr>
@@ -215,19 +228,61 @@
 
     <!-- CONTACT -->
     <section id="contact" >
-      <h2>contact</h2>
-      <p><i class="far fa-envelope"></i> rafalbern@outlook.com</p>
-      <p><i class="fas fa-phone"></i> 514 660 5690</p>
+      <div>
+        <h1>contact</h1>
+        <p><i class="far fa-envelope"></i> <a href="mailto:rafalbern@outlook.com"> rafalbern@outlook.com</a></p>
+        <p><i class="fas fa-phone"></i> 514 660 5690</p>
 
-      <a href="https://www.facebook.com/raphael.al.393" class="fa fa-facebook" target="blank"></a>
-      <a href="https://www.linkedin.com/in/raphael-a-b24113182/" class="fa fa-linkedin"  target="blank"></a>
+        <a href="https://www.facebook.com/raphael.al.393" class="fa fa-facebook" target="blank"></a>
+        <a href="https://www.linkedin.com/in/raphael-a-b24113182/" class="fa fa-linkedin"  target="blank"></a>
+
+      </div>
+
+      <div id="contact-form">
+        <form>
+          <table>
+            <tr>
+              <td colspan="2"><h5>Leave a message:</h5></td>
+
+            </tr>
+            <tr>
+              <td width="90px;"><label >Name</label></td>
+              <td width="400px">
+                <input class="form-control" type="text" name="name" required>
+              </td>
+            </tr>
+            <tr>
+              <td><label>Email</label></td>
+              <td><input class="form-control" type="text" name="email" required></td>
+            </tr>
+            <tr>
+              <td>
+                <label>Message</label>
+              </td>
+              <td>
+                <textarea class="form-control" placeholder="form under construction :("></textarea>
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><button type="button" id="submit" class="btn btn-success">Shout!</button></td>
+            </tr>
+          </table>
+        </form>
+
+
+
+
+
+      <span class="arrow-up">
+        <svg class="bi bi-arrow-up-circle-fill" width="2em" height="2em" viewBox="0 0 16 16" fill="currentColor" xmlns="  http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-10.646.354a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 6.207V11a.5.5 0 0 1-1 0V6.207L5.354 8.354z"/>
+        </svg>
+      </span>
+
     </section>
 
-    <span class="arrow-up">
-      <svg class="bi bi-arrow-up-circle-fill" width="2em" height="2em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-        <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-10.646.354a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 6.207V11a.5.5 0 0 1-1 0V6.207L5.354 8.354z"/>
-      </svg>
-    </span>
+
 
   </main>
 
