@@ -1,4 +1,4 @@
-const smtp = require('./smtp');
+
 
 
 $(document).ready(function() {  // to make sure that the DOM of the page is ready to manipulate.
@@ -17,25 +17,6 @@ $(document).ready(function() {  // to make sure that the DOM of the page is read
   $(".arrow-up").click(function() {
     $('html ,body').animate({scrollTop : 0},800);
   });
-
-
-  // when button is clicked on contact section, hide form and display a message
-  // $("#form-submit").click(function() {
-  //   let email = document.querySelector("#form-email").value
-  //   let message = document.querySelector("#form-message").value
-  //     Email.send({
-  //       Host : "smtp.elasticemail.com",
-  //       Username : "rafalbern@outlook.com",
-  //       Password : stmp.STMP_TOKEN,
-  //       To : 'rafalbern@outlook.com',
-  //       From : email,
-  //       Subject : "Message from Raphael's Portfolio",
-  //       Body : message
-  //     }).then(
-  //       message => alert("Thank you for connecting! I will get back to you asap :)")
-  //     );
-  //     document.querySelector("#contact-form").reset()
-  // });
 
 
 
