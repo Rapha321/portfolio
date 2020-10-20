@@ -245,6 +245,8 @@ table .open button:hover {
   transform: scale(1.1);
 }
 
+
+
 /*Mobile device*/
 @media screen and (max-width: 800px) {
 
