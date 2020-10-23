@@ -273,7 +273,7 @@ table .open button:hover {
   #portfolio {
     height: 500px;
     overflow: scroll;
-    padding: 20px 20px;
+    padding: 20px 10px;
 
   }
 
@@ -283,8 +283,29 @@ table .open button:hover {
 
   #contact {
     padding: 20px 20px;
-    display: block;
+    flex-direction: column;
+
   }
+
+  #contact-form {
+    display: none;
+  }
+
+  table .desc {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  table .git {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  table .project {
+    padding-left: 5px;
+    padding-right: 0;
+  }
+
 
 
 
