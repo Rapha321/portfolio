@@ -1,293 +1,441 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>raphael's portfolio</title>
+  <head>
+    <title>raphael's portfolio</title>
 
-  <!-- Disable viewport zooming to allow mobile devices to use our mobile layout-->
-    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+    <!-- Disable viewport zooming to allow mobile devices to use our mobile layout-->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
 
-   <!-- External JS -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- External JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
+    <!-- Bootstrap -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/1183c3861a.js"
+      crossorigin="anonymous"
+    ></script>
 
-  <!-- Bootstrap -->
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- App CSS -->
+    <link rel="stylesheet" href="style.css" type="text/css" />
 
-  <!-- Font Awesome -->
-  <script src="https://kit.fontawesome.com/1183c3861a.js" crossorigin="anonymous"></script>
+    <!-- Google font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ramaraja&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- App CSS -->
-  <link rel="stylesheet" href="style.css" type="text/css" />
+    <!-- App JS -->
+    <script type="text/javascript" src="script.js"></script>
 
-  <!-- Google font -->
-  <link href="https://fonts.googleapis.com/css2?family=Ramaraja&display=swap" rel="stylesheet">
+    <!-- icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"
+    />
 
-  <!-- App JS -->
-  <script type="text/javascript" src="script.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-7D3N93BPPP"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  <!-- icons -->
-  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+      gtag("config", "G-7D3N93BPPP");
+    </script>
+  </head>
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7D3N93BPPP"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-7D3N93BPPP');
-  </script>
-
-</head>
-
-
-<body>
+  <body>
     <header class="header">
       <!-- NAVBAR -->
       <nav class="navbar navbar-expand-lg fixed-top bg-faded navbar-light">
-          <span>
-            <a href="https://resume.creddle.io/resume/83fzb06543x" target="blank">
-              <strong>
-                <span class="first">raphael</span>
-                <span class="last">albern</span>
-              </strong>
-            </a>
+        <span>
+          <a href="https://resume.creddle.io/resume/83fzb06543x" target="blank">
+            <strong>
+              <span class="first">raphael</span>
+              <span class="last">albern</span>
+            </strong>
+          </a>
+        </span>
 
-          </span>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target=" #navbarTogglerDemo01"
+          aria-controls="navbarTogglerDemo01"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=" #navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo01" >
-            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" href="#about-me">About Me<span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#portfolio">Projects</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#skills">Skills</a>
-              </li>
-              <li class="nav-item" class="resume">
-                <a class="nav-link" href="https://resume.creddle.io/resume/83fzb06543x" target="blank">Resume</a>
-              </li>
-              <li class="nav-item" class="contact">
-                <a class="nav-link" href="#contact">Contact</a>
-              </li>
-            </ul>
-          </div>
-
-        </nav>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#about-me"
+                >About Me<span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item" class="resume">
+              <a
+                class="nav-link"
+                href="https://resume.creddle.io/resume/83fzb06543x"
+                target="blank"
+                >Resume</a
+              >
+            </li>
+            <li class="nav-item" class="contact">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
-  <main class="main">
-    <!-- ABOUT ME -->
-    <section id="about-me">
-      <div>
-        <h1>about me</h1>
-        <p>
-          After working in the accounting/finance for several years, I changed my career path to go in the tech industry and jump into a career that excites me, challenges me, and allows me to use my creativity. I joined Lighthouse Lab's Web Development Bootcamp to build on my knowledge of full stack technologies. Now I am eager to bring my problem-solving and client support skills along with my teamwork and technical skills from the Bootcamp into a developer role.
-        </p>
+    <main class="main">
+      <!-- ABOUT ME -->
+      <section id="about-me">
+        <div>
+          <h1>about me</h1>
+          <p>
+            After working in the accounting/finance for several years, I changed
+            my career path to go in the tech industry and jump into a career
+            that excites me, challenges me, and allows me to use my creativity.
+            I joined Lighthouse Lab's Web Development Bootcamp to build on my
+            knowledge of full stack technologies and currently I am in the process
+            of completing an AEC in Object Oriented Programming and Web Technologies at
+            College de Rosemont in Montreal. In view of completing the AEC, I am looking
+            for an internship opportunity to help me kick start a career as a full stack
+            developper.
+          </p>
 
+          <p>
+            In view of completing the AEC, I am looking for an internship opportunity to
+            help me kick start a career as a full stack developper.
+            <br /><br />
+          </p>
+        </div>
+        <div class="about-me-img">
+          <img src="./img/about-me.png" width="250px" height="250px" />
+        </div>
+      </section>
 
-        <p>
-          I am looking for a junior position to kick start my career in tech. I am looking forward to have fun learning and grow with a company through cotinuous professional development :)
-          <br><br>
+      <!-- PORTFOLIO -->
+      <section id="portfolio">
+        <h1>portfolio</h1>
 
-        </p>
-      </div>
-      <div class="about-me-img">
-        <img src="./img/about-me.png" width="250px" height="250px">
-      </div>
-    </section>
+        <table>
+          <!-- TABLE HEADER -->
+          <tr>
+            <th class="project">Projects</th>
+            <th class="desc">Descriptions</th>
+            <!-- <th class="open">Webpage</th> -->
+            <th class="git">Github repo</th>
+          </tr>
 
-    <!-- PORTFOLIO -->
-    <section id="portfolio" >
-      <h1>portfolio</h1>
+          <!-- GITHUB AVATAR DOWNLOADER -->
+          <tr class="project-select">
+            <td class="project">Github Avatar Downloader</td>
+            <td class="desc">
+              A command line node app that uses HTTP to retrieve content from
+              Github using their API and write content on disk.
+            </td>
+            <!-- <td class="open"><a href="#"><button class="btn btn-success">Open</button></a></td> -->
+            <td class="git">
+              <a
+                href="https://github.com/Rapha321/github-avatar-downloader"
+                target="blank"
+                ><button class="btn-github">
+                  <img
+                    src="https://img.icons8.com/fluent/25/000000/github.png"
+                  /></button
+              ></a>
+            </td>
+          </tr>
 
-      <table>
-        <!-- TABLE HEADER -->
-        <tr>
-          <th class="project">Projects</th>
-          <th class="desc">Descriptions</th>
-          <!-- <th class="open">Webpage</th> -->
-          <th class="git">Github repo</th>
-        </tr>
+          <!-- TINY APP -->
+          <tr class="project-select">
+            <td class="project">Tiny App</td>
+            <td class="desc">
+              TinyApp is a full stack web application built with Node and
+              Express that allow users to shorten long URLs (a la bit.ly).
+              Dependencies: Node.js, Express, EJS, bcrypt, body-parser,
+              cookie-session.
+            </td>
+            <!-- <td class="open"><a href="#"><button class="btn btn-success">Open</button></a></td> -->
+            <td class="git">
+              <a
+                href="https://github.com/Rapha321/TinyApp-Project/blob/master/README.md"
+                target="blank"
+                ><button class="btn-github">
+                  <img
+                    src="https://img.icons8.com/fluent/25/000000/github.png"
+                  /></button
+              ></a>
+            </td>
+          </tr>
 
-        <!-- GITHUB AVATAR DOWNLOADER -->
-        <tr class="project-select">
-          <td class="project">Github Avatar Downloader</td>
-          <td class="desc">A command line node app that uses HTTP to retrieve content from Github using their API and write content on disk.</td>
-          <!-- <td class="open"><a href="#"><button class="btn btn-success">Open</button></a></td> -->
-          <td class="git"><a href="https://github.com/Rapha321/github-avatar-downloader" target="blank"><button class="btn-github"><img src="https://img.icons8.com/fluent/25/000000/github.png"/></button></a></td>
-        </tr>
+          <!-- TWEETER -->
+          <tr class="project-select">
+            <td class="project">Tweeter</td>
+            <td class="desc">
+              Tweeter is a simple, single-page Twitter clone built with HTML,
+              CSS, JS, jQuery and AJAX on front-end, and Node, Express and
+              MongoDB on back-end.
+            </td>
+            <!-- <td class="open"><a href="https://lhl-tweeter.herokuapp.com" target="blank"><button class="btn btn-success">Open</button></a></td> -->
+            <td class="git">
+              <a
+                href="https://github.com/Rapha321/tweeter1/blob/master/README.md"
+                target="blank"
+                ><button class="btn-github">
+                  <img
+                    src="https://img.icons8.com/fluent/25/000000/github.png"
+                  /></button
+              ></a>
+            </td>
+          </tr>
 
-        <!-- TINY APP -->
-        <tr class="project-select">
-          <td class="project">Tiny App</td>
-          <td class="desc">
-            TinyApp is a full stack web application built with Node and Express that allow users to shorten long URLs (a la bit.ly).
-            Dependencies: Node.js, Express, EJS, bcrypt, body-parser, cookie-session.
-          </td>
-          <!-- <td class="open"><a href="#"><button class="btn btn-success">Open</button></a></td> -->
-          <td class="git"><a href="https://github.com/Rapha321/TinyApp-Project/blob/master/README.md" target="blank"><button class="btn-github"><img src="https://img.icons8.com/fluent/25/000000/github.png"/></button></a></td>
-        </tr>
+          <!-- SCHOODLE - MIDTERM PROJECT-->
+          <tr class="project-select">
+            <td class="project">Schoodle (Mid Term project)</td>
+            <td class="desc">
+              Schoole is a simple, easy to use, free event organizing app. The
+              repository is the start code for the project: users will fork and
+              clone this repository, then build upon it using HTML, CSS,
+              SASS,Bootstrap, JS, JQuery, AJAX front-end skills, and back-end
+              skills including Node, express, postgres and knex.
+            </td>
+            <!-- <td class="open"><a href="#"><button class="btn btn-success">Open</button></a></td> -->
+            <td class="git">
+              <a
+                href="https://github.com/Rapha321/lhl_midTermProject"
+                target="blank"
+              >
+                <button class="btn-github">
+                  <img
+                    src="https://img.icons8.com/fluent/25/000000/github.png"
+                  />
+                </button>
+              </a>
+            </td>
+          </tr>
 
-        <!-- TWEETER -->
-        <tr class="project-select">
-          <td class="project">Tweeter</td>
-          <td class="desc">
-            Tweeter is a simple, single-page Twitter clone built with HTML, CSS, JS, jQuery and AJAX on front-end, and Node, Express and MongoDB on back-end.
-          </td>
-          <!-- <td class="open"><a href="https://lhl-tweeter.herokuapp.com" target="blank"><button class="btn btn-success">Open</button></a></td> -->
-          <td class="git"><a href="https://github.com/Rapha321/tweeter1/blob/master/README.md" target="blank"><button class="btn-github"><img src="https://img.icons8.com/fluent/25/000000/github.png"/></button></a></td>
-        </tr>
-
-        <!-- SCHOODLE - MIDTERM PROJECT-->
-        <tr class="project-select">
-          <td class="project">Schoodle (Mid Term project)</td>
-          <td class="desc">
-            Schoole is a simple, easy to use, free event organizing app. The repository is the start code for the project: users will fork and clone this repository, then build upon it using HTML, CSS, SASS,Bootstrap, JS, JQuery, AJAX front-end skills, and back-end skills including Node, express, postgres and knex.
-          </td>
-          <!-- <td class="open"><a href="#"><button class="btn btn-success">Open</button></a></td> -->
-          <td class="git">
-            <a href="https://github.com/Rapha321/lhl_midTermProject" target="blank">
-              <button class="btn-github">
-                <img src="https://img.icons8.com/fluent/25/000000/github.png"/>
-              </button>
-          </a>
-          </td>
-        </tr>
-
-        <!-- ROOMY - FINAL PROJECT -->
-        <tr class="project-select">
-          <td class="project">Roomy (Final project)</td>
-          <td class="desc">
-            Roomy is a web application created to connect people who are looking for a room to live and for a room to rent out. The core piece of the application is people. Roomy is built in the way that people could see their matching score with potential roommates and make a decision based on that score. The matching score is based on habits, cleanliness, working/ partying schedules, food preferences and personality.
-          </td>
-          <!-- <td class="open"> -->
+          <!-- ROOMY - FINAL PROJECT -->
+          <tr class="project-select">
+            <td class="project">Roomy (Final project)</td>
+            <td class="desc">
+              Roomy is a web application created to connect people who are
+              looking for a room to live and for a room to rent out. The core
+              piece of the application is people. Roomy is built in the way that
+              people could see their matching score with potential roommates and
+              make a decision based on that score. The matching score is based
+              on habits, cleanliness, working/ partying schedules, food
+              preferences and personality.
+            </td>
+            <!-- <td class="open"> -->
             <!-- <a href="#"><button class="btn btn-success">Open</button></a> -->
-          <!-- </td> -->
-          <td class="git">
-            <a href="https://github.com/Rapha321/roomy/blob/master/README.md" target="blank">
-              <button class="btn-github"><img src="https://img.icons8.com/fluent/25/000000/github.png"/></button>
-            </a>
-          </td>
-        </tr>
-
-      </table>
-
-    </section>
-
-    <!-- SKILLS  -->
-    <section id="skills" >
-
-      <div class="skills-img">
-        <img src="./img/skills-img.png" width="250px" height="250px">
-      </div>
-
-      <div>
-        <h1>skills</h1>
-
-        <table class="languages">
-          <tr>
-            <td><h5>Languages</h5></td>
-            <td> : </td>
-            <div>
-              <td><img src="./img/python.png" width="45em"></td>
-              <td><img src="./img/html.png" width="45em"></td>
-              <!-- <td><img src="https://img.icons8.com/windows/64/000000/html-5.png"/></td> -->
-              <td><img src="https://img.icons8.com/windows/64/000000/css.png"/></td>
-              <td><img src="https://img.icons8.com/windows/64/000000/js.png"/></td>
-              <td><img src="https://img.icons8.com/windows/64/000000/sql.png"/></td>
-              <!-- <td><img src="https://img.icons8.com/windows/64/000000/python.png"/></td> -->
-            </div>
-
+            <!-- </td> -->
+            <td class="git">
+              <a
+                href="https://github.com/Rapha321/roomy/blob/master/README.md"
+                target="blank"
+              >
+                <button class="btn-github">
+                  <img
+                    src="https://img.icons8.com/fluent/25/000000/github.png"
+                  />
+                </button>
+              </a>
+            </td>
           </tr>
         </table>
+      </section>
 
-        <table class="frameworks">
-          <tr>
-            <td><h5>Framework</h5></td>
-            <td>  : </td>
-            <div>
-              <td><img src="./img/react.png" width="45em">react</td>
-              <!-- <td><img src="https://img.icons8.com/wired/64/000000/react.png"/></td> -->
-              <td><img src="https://img.icons8.com/color/64/000000/bootstrap.png"/>Bootstrap</td>
-              <td><img src="https://img.icons8.com/ios-filled/50/000000/jquery.png"/>jQuery</td>
-              <td><img src="https://img.icons8.com/windows/64/000000/nodejs.png"/></td>
-            </div>
-          </tr>
-        </table>
-      </div>
+      <!-- SKILLS  -->
+      <section id="skills">
+        <div class="skills-img">
+          <img src="./img/skills-img.png" width="250px" height="250px" />
+        </div>
 
-    </section>
+        <div>
+          <h1>skills</h1>
 
-
-    <!-- CONTACT -->
-    <section id="contact" >
-      <div>
-        <h1>contact</h1>
-        <p><i class="far fa-envelope"></i> <a href="mailto:rafalbern@outlook.com"> rafalbern@outlook.com</a></p>
-        <p><i class="fas fa-phone"></i> 514 660 5690</p>
-        <a href="https://www.facebook.com/raphael.al.393" class="fa fa-facebook" target="blank"></a>
-        <a href="https://www.linkedin.com/in/raphael-a-b24113182/" class="fa fa-linkedin"  target="blank"></a>
-      </div>
-
-
-      <div id="contact-form">
-        <form action="https://formspree.io/f/xnqoddaw" method="post">
-          <table>
+          <table class="languages">
             <tr>
-              <td colspan="2"><h5>Let's chat:</h5></td>
-            </tr>
-            <tr>
-              <td width="90px;"><label >Name</label></td>
-              <td width="400px">
-                <input class="form-control" type="text" name="name" value="" required>
-              </td>
-            </tr>
-            <tr>
-              <td><label>Email</label></td>
-              <td><input id="form-email" class="form-control" type="text" name="email" value="" required></td>
-            </tr>
-            <tr>
-              <td>
-                <label>Message</label>
-              </td>
-              <td>
-                <textarea id="form-message" class="form-control" name="message" value="" placeholder=""></textarea>
-              </td>
-            </tr>
-            <tr>
-              <td></td>
-              <td><button type="submit" id="form-submit" class="btn btn-success">Send</button></td>
+              <td><h5>Languages</h5></td>
+              <td>:</td>
+              <div>
+                <td><img src="./img/python.png" width="45em" /></td>
+                <td><img src="./img/html.png" width="45em" /></td>
+                <!-- <td><img src="https://img.icons8.com/windows/64/000000/html-5.png"/></td> -->
+                <td>
+                  <img src="https://img.icons8.com/windows/64/000000/css.png" />
+                </td>
+                <td>
+                  <img src="https://img.icons8.com/windows/64/000000/js.png" />
+                </td>
+                <td>
+                  <img src="https://img.icons8.com/windows/64/000000/sql.png" />
+                </td>
+
+              </div>
             </tr>
           </table>
-        </form>
 
-      </div>
+          <table class="frameworks">
+            <tr>
+              <td><h5>Framework</h5></td>
+              <td>:</td>
+              <div>
+                <td><img src="./img/react.png" width="45em" />react</td>
+                <!-- <td><img src="https://img.icons8.com/wired/64/000000/react.png"/></td> -->
+                <td>
+                  <img
+                    src="https://img.icons8.com/color/64/000000/bootstrap.png"
+                  />Bootstrap
+                </td>
+                <td>
+                  <img
+                    src="https://img.icons8.com/ios-filled/50/000000/jquery.png"
+                  />jQuery
+                </td>
+                <td>
+                  <img
+                    src="https://img.icons8.com/windows/64/000000/nodejs.png"
+                  />
+                </td>
+              </div>
+            </tr>
+          </table>
+        </div>
+      </section>
 
-    </section>
+      <!-- CONTACT -->
+      <section id="contact">
+        <div>
+          <h1>contact</h1>
+          <p>
+            <i class="far fa-envelope"></i>
+            <a href="mailto:rafalbern@outlook.com"> rafalbern@outlook.com</a>
+          </p>
+          <p><i class="fas fa-phone"></i> 514 660 5690</p>
+          <a
+            href="https://www.facebook.com/raphael.al.393"
+            class="fa fa-facebook"
+            target="blank"
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/raphael-a-b24113182/"
+            class="fa fa-linkedin"
+            target="blank"
+          ></a>
+        </div>
 
-    <span class="arrow-up">
-      <svg class="bi bi-arrow-up-circle-fill" width="2em" height="2em" viewBox="0 0 16 16" fill="currentColor" xmlns="  http://www.w3.org/2000/svg">
-      <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-10.646.354a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 6.207V11a.5.5 0 0 1-1 0V6.207L5.354 8.354z"/>
-      </svg>
-    </span>
+        <div id="contact-form">
+          <form action="https://formspree.io/f/xnqoddaw" method="post">
+            <table>
+              <tr>
+                <td colspan="2"><h5>Let's chat:</h5></td>
+              </tr>
+              <tr>
+                <td width="90px;"><label>Name</label></td>
+                <td width="400px">
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="name"
+                    value=""
+                    required
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td><label>Email</label></td>
+                <td>
+                  <input
+                    id="form-email"
+                    class="form-control"
+                    type="text"
+                    name="email"
+                    value=""
+                    required
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label>Message</label>
+                </td>
+                <td>
+                  <textarea
+                    id="form-message"
+                    class="form-control"
+                    name="message"
+                    value=""
+                    placeholder=""
+                  ></textarea>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>
+                  <button
+                    type="submit"
+                    id="form-submit"
+                    class="btn btn-success"
+                  >
+                    Send
+                  </button>
+                </td>
+              </tr>
+            </table>
+          </form>
+        </div>
+      </section>
 
+      <span class="arrow-up">
+        <svg
+          class="bi bi-arrow-up-circle-fill"
+          width="2em"
+          height="2em"
+          viewBox="0 0 16 16"
+          fill="currentColor"
+          xmlns="  http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-10.646.354a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 6.207V11a.5.5 0 0 1-1 0V6.207L5.354 8.354z"
+          />
+        </svg>
+      </span>
+    </main>
 
-
-  </main>
-
-
-  <div id="footer" class="card-footer text-muted">
-    made with <i class="fas fa-heart"></i> by raphael albern
-  </div>
-
-</body>
+    <div id="footer" class="card-footer text-muted">
+      made with <i class="fas fa-heart"></i> by raphael albern
+    </div>
+  </body>
 </html>
