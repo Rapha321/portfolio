@@ -349,6 +349,40 @@
     #back-top.visible { opacity: 1; pointer-events: all; }
     #back-top:hover { color: var(--accent); }
 
+    /* ─── TABS ───────────────────────────────────── */
+    .tab-bar {
+      display: flex; gap: .5rem; margin-top: 2.5rem; margin-bottom: 2.5rem;
+      border-bottom: 1px solid var(--border); padding-bottom: 0;
+    }
+    .tab-btn {
+      display: inline-flex; align-items: center; gap: .5rem;
+      padding: .6rem 1.25rem;
+      background: none; border: none; border-bottom: 2px solid transparent;
+      margin-bottom: -1px;
+      font-family: 'DM Sans', sans-serif; font-size: .9rem; font-weight: 500;
+      color: var(--muted); cursor: pointer;
+      transition: color var(--transition), border-color var(--transition);
+    }
+    .tab-btn i { font-size: .85rem; }
+    .tab-btn:hover { color: var(--text); }
+    .tab-btn.active { color: var(--accent); border-bottom-color: var(--accent); }
+    .tab-count {
+      font-family: 'DM Mono', monospace; font-size: .7rem;
+      background: rgba(108,99,255,.15); color: var(--accent2);
+      border-radius: 99px; padding: .1rem .45rem;
+    }
+    .tab-btn.active .tab-count { background: rgba(108,99,255,.25); }
+    .tab-panel { display: none; }
+    .tab-panel.active { display: block; }
+
+    /* DS badge */
+    .ds-badge {
+      display: inline-flex; align-items: center; gap: .35rem;
+      font-family: 'DM Mono', monospace; font-size: .68rem;
+      color: var(--success); border: 1px solid rgba(34,211,165,.2);
+      border-radius: 4px; padding: .15rem .5rem; letter-spacing: .03em;
+    }
+
     /* ─── RESPONSIVE ─────────────────────────────── */
     @media (max-width: 768px) {
       .nav-links { display: none; }
@@ -434,13 +468,18 @@
       <p class="section-label">// about me</p>
       <h2 class="section-title">Building things that matter</h2>
       <p>
-        Software Developer with three years of experience at BDC optimizing Microsoft Dynamics 365 systems using C#, JavaScript, and Power BI.
+        Analyst Developer with 3 years of experience delivering business and technical solutions within Microsoft Dynamics 365 CRM. 
+        Strong background in requirements analysis, process mapping, solution design, and cross functional coordination with 
+        architects, product owners, QA, and senior developers. Skilled in C#, .NET, JavaScript, and Power BI, with a solid 
+        foundation in accounting/finance and data analysis.
       </p>
       <p>
-        I started my career in finance before transitioning to tech through the Lighthouse Labs bootcamp and an AEC in Object Oriented Programming and Web Technologies at Collège de Rosemont.
+        I started my career in finance before transitioning to tech through the Lighthouse Labs bootcamp and an AEC in Object 
+        Oriented Programming and Web Technologies at Collège de Rosemont.
       </p>
       <p>
-        Bilingual and versatile — proficient in full-stack development and data analysis. Currently seeking a position in Montreal to leverage my technical skills and analytical mindset.
+        Bilingual and versatile — proficient in full-stack development and data analysis. Currently seeking a position to leverage 
+        my technical skills and analytical mindset.
       </p>
     </div>
     <div>
@@ -459,95 +498,161 @@
   <p class="section-label">// projects</p>
   <h2 class="section-title">Things I've built</h2>
 
-  <div class="projects-grid">
-
-    <div class="project-card">
-      <div class="project-card-top">
-        <div class="project-icon"><i class="fas fa-satellite"></i></div>
-        <div class="project-links">
-          <a href="https://celestial-approaching-objects--rapha321.replit.app/" target="_blank" title="Live Demo"><i class="fas fa-arrow-up-right-from-square"></i></a>
-          <a href="https://github.com/Rapha321/near-earth-object-tracker" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-        </div>
-      </div>
-      <h3>Near Earth Object Tracker</h3>
-      <p>An immersive 3D space dashboard tracking asteroids approaching Earth in the next 7 days, powered by NASA's NeoWs API. Built entirely through prompt engineering with an AI agent on Replit.</p>
-      <div class="project-tags">
-        <span class="tag">NASA API</span><span class="tag">3D</span><span class="tag">AI-assisted</span>
-      </div>
-    </div>
-
-    <div class="project-card">
-      <div class="project-card-top">
-        <div class="project-icon"><i class="fas fa-wine-bottle"></i></div>
-        <div class="project-links">
-          <a href="https://github.com/Rapha321/CaveAVins" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-        </div>
-      </div>
-      <h3>Cave à Vins</h3>
-      <p>Full Stack MERN e-commerce web application specializing in local wines. Features full product catalog, cart, and checkout experience.</p>
-      <div class="project-tags">
-        <span class="tag">React</span><span class="tag">Node.js</span><span class="tag">MongoDB</span><span class="tag">Express</span>
-      </div>
-    </div>
-
-    <div class="project-card">
-      <div class="project-card-top">
-        <div class="project-icon"><i class="fas fa-coins"></i></div>
-        <div class="project-links">
-          <a href="https://coinfolio-chi.vercel.app" target="_blank" title="Live Demo"><i class="fas fa-arrow-up-right-from-square"></i></a>
-          <a href="https://github.com/Rapha321/coinmagik" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-        </div>
-      </div>
-      <h3>KoinFolio</h3>
-      <p>Web application to help users build and track a portfolio of cryptocurrencies. All data is fetched live from the CoinGecko API.</p>
-      <div class="project-tags">
-        <span class="tag">React</span><span class="tag">CoinGecko API</span><span class="tag">MaterialUI</span>
-      </div>
-    </div>
-
-    <div class="project-card">
-      <div class="project-card-top">
-        <div class="project-icon"><i class="fas fa-house-user"></i></div>
-        <div class="project-links">
-          <a href="https://github.com/Rapha321/Gestion_colocataires" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-        </div>
-      </div>
-      <h3>Gestion Colocataire</h3>
-      <p>Web application connecting apartment seekers with landlords. Supports tenant profiles, listings, and a matching flow between renters and owners.</p>
-      <div class="project-tags">
-        <span class="tag">PHP</span><span class="tag">MySQL</span><span class="tag">AJAX</span><span class="tag">Bootstrap</span>
-      </div>
-    </div>
-
-    <div class="project-card">
-      <div class="project-card-top">
-        <div class="project-icon"><i class="fas fa-people-roof"></i></div>
-        <div class="project-links">
-          <a href="https://github.com/Rapha321/roomy/blob/master/README.md" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-        </div>
-      </div>
-      <h3>Roomy — LHL Final Project</h3>
-      <p>Connects people looking for a room with those renting one out. Generates a compatibility score based on habits, schedules, and preferences to help users find the right match.</p>
-      <div class="project-tags">
-        <span class="tag">React</span><span class="tag">PostgreSQL</span><span class="tag">Google Maps</span><span class="tag">Mailgun</span>
-      </div>
-    </div>
-
-    <div class="project-card">
-      <div class="project-card-top">
-        <div class="project-icon"><i class="fab fa-twitter"></i></div>
-        <div class="project-links">
-          <a href="https://github.com/Rapha321/tweeter1/blob/master/README.md" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-        </div>
-      </div>
-      <h3>Tweeter</h3>
-      <p>A single-page Twitter clone. Compose, post, and view tweets in a clean real-time feed.</p>
-      <div class="project-tags">
-        <span class="tag">Node.js</span><span class="tag">jQuery</span><span class="tag">MongoDB</span>
-      </div>
-    </div>
-
+  <!-- Tab bar -->
+  <div class="tab-bar" role="tablist">
+    <button class="tab-btn active" role="tab" aria-selected="true" data-tab="webdev">
+      <i class="fas fa-code"></i> Web Development <span class="tab-count">6</span>
+    </button>
+    <button class="tab-btn" role="tab" aria-selected="false" data-tab="datascience">
+      <i class="fas fa-brain"></i> Data Science <span class="tab-count">3</span>
+    </button>
   </div>
+
+  <!-- Web Dev tab -->
+  <div class="tab-panel active" id="tab-webdev">
+    <div class="projects-grid">
+
+      <div class="project-card">
+        <div class="project-card-top">
+          <div class="project-icon"><i class="fas fa-satellite"></i></div>
+          <div class="project-links">
+            <a href="https://celestial-approaching-objects--rapha321.replit.app/" target="_blank" title="Live Demo"><i class="fas fa-arrow-up-right-from-square"></i></a>
+            <a href="https://github.com/Rapha321/near-earth-object-tracker" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <h3>Near Earth Object Tracker</h3>
+        <p>An immersive 3D space dashboard tracking asteroids approaching Earth in the next 7 days, powered by NASA's NeoWs API. Built entirely through prompt engineering with an AI agent on Replit.</p>
+        <div class="project-tags">
+          <span class="tag">NASA API</span><span class="tag">3D</span><span class="tag">AI-assisted</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-card-top">
+          <div class="project-icon"><i class="fas fa-wine-bottle"></i></div>
+          <div class="project-links">
+            <a href="https://github.com/Rapha321/CaveAVins" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <h3>Cave à Vins</h3>
+        <p>Full Stack MERN e-commerce web application specializing in local wines. Features full product catalog, cart, and checkout experience.</p>
+        <div class="project-tags">
+          <span class="tag">React</span><span class="tag">Node.js</span><span class="tag">MongoDB</span><span class="tag">Express</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-card-top">
+          <div class="project-icon"><i class="fas fa-coins"></i></div>
+          <div class="project-links">
+            <a href="https://coinfolio-chi.vercel.app" target="_blank" title="Live Demo"><i class="fas fa-arrow-up-right-from-square"></i></a>
+            <a href="https://github.com/Rapha321/coinmagik" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <h3>KoinFolio</h3>
+        <p>Web application to help users build and track a portfolio of cryptocurrencies. All data is fetched live from the CoinGecko API.</p>
+        <div class="project-tags">
+          <span class="tag">React</span><span class="tag">CoinGecko API</span><span class="tag">MaterialUI</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-card-top">
+          <div class="project-icon"><i class="fas fa-house-user"></i></div>
+          <div class="project-links">
+            <a href="https://github.com/Rapha321/Gestion_colocataires" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <h3>Gestion Colocataire</h3>
+        <p>Web application connecting apartment seekers with landlords. Supports tenant profiles, listings, and a matching flow between renters and owners.</p>
+        <div class="project-tags">
+          <span class="tag">PHP</span><span class="tag">MySQL</span><span class="tag">AJAX</span><span class="tag">Bootstrap</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-card-top">
+          <div class="project-icon"><i class="fas fa-people-roof"></i></div>
+          <div class="project-links">
+            <a href="https://github.com/Rapha321/roomy/blob/master/README.md" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <h3>Roomy — LHL Final Project</h3>
+        <p>Connects people looking for a room with those renting one out. Generates a compatibility score based on habits, schedules, and preferences to help users find the right match.</p>
+        <div class="project-tags">
+          <span class="tag">React</span><span class="tag">PostgreSQL</span><span class="tag">Google Maps</span><span class="tag">Mailgun</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-card-top">
+          <div class="project-icon"><i class="fab fa-twitter"></i></div>
+          <div class="project-links">
+            <a href="https://github.com/Rapha321/tweeter1/blob/master/README.md" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <h3>Tweeter</h3>
+        <p>A single-page Twitter clone. Compose, post, and view tweets in a clean real-time feed.</p>
+        <div class="project-tags">
+          <span class="tag">Node.js</span><span class="tag">jQuery</span><span class="tag">MongoDB</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Data Science tab -->
+  <div class="tab-panel" id="tab-datascience">
+    <div class="projects-grid">
+
+      <div class="project-card">
+        <div class="project-card-top">
+          <div class="project-icon"><i class="fas fa-cloud-sun-rain"></i></div>
+          <div class="project-links">
+            <a href="https://github.com/Rapha321/Predicting-Weather-Patterns" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <h3>Predicting Weather Patterns</h3>
+        <span class="ds-badge"><i class="fas fa-graduation-cap"></i> University of Waterloo · Big Data</span>
+        <p style="margin-top:.6rem">ML models to predict snowfall and future temperatures using historical weather data. Best-performing Gradient Boosted Trees regressor achieved R² = 0.97. Also includes a real-time Kafka–Spark streaming pipeline ingesting live data into MongoDB.</p>
+        <div class="project-tags">
+          <span class="tag">Python</span><span class="tag">Apache Spark</span><span class="tag">Kafka</span><span class="tag">MongoDB</span><span class="tag">Random Forest</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-card-top">
+          <div class="project-icon"><i class="fas fa-car-burst"></i></div>
+          <div class="project-links">
+            <a href="https://github.com/Rapha321/ML_Predictive_Modeling_of_Road_Accident_Severity-" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <h3>Road Accident Severity Prediction</h3>
+        <span class="ds-badge"><i class="fas fa-graduation-cap"></i> University of Waterloo · Machine Learning</span>
+        <p style="margin-top:.6rem">Predictive model classifying severity of road accidents in Montréal across 5 levels, using 200,000+ records. Addressed class imbalance to accurately identify rare but high-impact fatal and serious injury outcomes.</p>
+        <div class="project-tags">
+          <span class="tag">Python</span><span class="tag">Scikit-learn</span><span class="tag">EDA</span><span class="tag">Classification</span><span class="tag">SMOTE</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-card-top">
+          <div class="project-icon"><i class="fas fa-heart-pulse"></i></div>
+          <div class="project-links">
+            <a href="https://github.com/Rapha321/DS_Investigating_Indicators_of_Heart_Disease" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <h3>Investigating Indicators of Heart Disease</h3>
+        <span class="ds-badge"><i class="fas fa-graduation-cap"></i> University of Waterloo · Statistics</span>
+        <p style="margin-top:.6rem">Statistical analysis of 400,000+ CDC survey records to explore how smoking, BMI, sleep, alcohol, and mental health correlate with heart disease. Applied Chi-Square, Mann-Whitney U, and Logistic Regression tests to uncover significant associations.</p>
+        <div class="project-tags">
+          <span class="tag">Python</span><span class="tag">Statistics</span><span class="tag">Logistic Regression</span><span class="tag">CDC Data</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
 </section>
 
 <!-- ─── SKILLS ────────────────────────────────────── -->
@@ -591,9 +696,29 @@
       <div class="skill-list">
         <span class="skill-pill"><i class="fab fa-github"></i> GitHub</span>
         <span class="skill-pill">Power BI</span>
+        <span class="skill-pill">Tableau</span>
         <span class="skill-pill">Dynamics 365</span>
         <span class="skill-pill">Vercel</span>
         <span class="skill-pill">Replit</span>
+      </div>
+    </div>
+    <div class="skill-group" style="grid-column: 1 / -1;">
+      <h3>Data Science & ML</h3>
+      <div class="skill-list">
+        <span class="skill-pill"><i class="fab fa-python"></i> Python</span>
+        <span class="skill-pill">Pandas</span>
+        <span class="skill-pill">NumPy</span>
+        <span class="skill-pill">Scikit-learn</span>
+        <span class="skill-pill">Matplotlib</span>
+        <span class="skill-pill">Seaborn</span>
+        <span class="skill-pill">Apache Spark</span>
+        <span class="skill-pill">Apache Kafka</span>
+        <span class="skill-pill">Random Forest</span>
+        <span class="skill-pill">Gradient Boosting</span>
+        <span class="skill-pill">Logistic Regression</span>
+        <span class="skill-pill">SMOTE</span>
+        <span class="skill-pill">Jupyter Notebook</span>
+        <span class="skill-pill">MongoDB</span>
       </div>
     </div>
   </div>
@@ -685,6 +810,17 @@
   const backTop = document.getElementById('back-top');
   window.addEventListener('scroll', () => {
     backTop.classList.toggle('visible', window.scrollY > 400);
+  });
+
+  // Tab switching
+  document.querySelectorAll('.tab-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.tab-btn').forEach(b => { b.classList.remove('active'); b.setAttribute('aria-selected','false'); });
+      document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+      btn.classList.add('active');
+      btn.setAttribute('aria-selected','true');
+      document.getElementById('tab-' + btn.dataset.tab).classList.add('active');
+    });
   });
 
   // Scroll-in animation
